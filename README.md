@@ -1,13 +1,22 @@
-# React Frontend for organizing travels
-We developed a frontend from scratch with VanillaJS only. Afterwards we migrated our website into a Single page application with React
 
-- VanillaJS-Frontend: https://github.com/simontree/webtech-2
-- Node.js Backend: https://github.com/simontree/travelsiteOnlyBackend
+# Webtech2React
+Turning our travel-organizing-webapp from https://github.com/simontree/webtech-2/ into a Single page application with React
 
-## Netlify 
-Our Frontend is connected to our uploaded backend on heroku and can be accessed from netlify:
-https://blissful-bell-0df345.netlify.app/
+## Setup
+1. clone repo into local directory
+2. run "npm i" to get all included repo-packages installed
+3. run app with "npm run start"
 
-1. Clone repo into your local directory
-2. Run "npm i" to install all necessary packages
-3. Run "npm start" to start the application on port 3000
+## Netlify
+
+https://blissful-bell-0df345.netlify.app
+
+### Test-Login:
+User: testuser@yoohoo.com
+PW: testYY21.
+
+## Backend
+
+Heroku: https://git.heroku.com/travelsitebackend.git
+
+Für lokale Entwicklung: https://github.com/simontree/travelsiteOnlyBackend

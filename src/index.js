@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './components/i18n/i18n';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>,
+    <App/>,
   </React.StrictMode>,
   document.getElementById('root')
 );

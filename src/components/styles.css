@@ -3,6 +3,58 @@ body{
     
 }
 
+.loading-screen{
+    padding: 100px;
+    text-align: center;
+}
+
+.input-control{
+    font-size: 15px;
+}
+
+.trip-details{
+    width: 250px;
+    border: grey;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.test{
+    padding-top: 200px;
+}
+
+.main-form {
+  color: #222222;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+.trip-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.trip-list-map {
+    overflow-y: scroll;
+    height: 530px;
+    padding-top: 50px;
+}
+
+.trip-list-addtrip {
+    overflow-y: scroll;
+    height: 430px;
+}
+
+.trip-container{
+    padding-top: 100px;
+}
+
 .container{
     text-align: center;
     display: grid;
@@ -24,12 +76,10 @@ body{
 .container-after-login-map {
     text-align: center;
     display: grid;
-    grid-template-rows: 120px 500px 1fr;
+    grid-template-rows: 500px;
     grid-template-columns: 75% 1fr;
     grid-template-areas: 
-      "header header"
       "main aside"
-      "footer footer"
 }
 
 .container-after-login-triplist {
@@ -69,8 +119,11 @@ header {
 main {
     grid-area: main;
     line-height: 30px; 
-    padding: 40px;
-    overflow-y: scroll;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    background-color: white;
 }
 
 aside{
@@ -79,6 +132,7 @@ aside{
 
 footer {
     grid-area: footer;
+    text-align: center;
     position:fixed;
     bottom: 0%;
     left:0%;
@@ -185,9 +239,26 @@ a{
     font-size: 16px;
 }
 
+.map{
+    padding-top: 80px;
+}
 
 /*responsive Part*/
 @media(max-width: 790px){
+
+    .trip-list {
+        padding-top: 50px;
+    }
+
+    .map{
+        padding-top: 200px;
+        height: 600px;
+    }
+
+    .trip-container{
+        padding-top: 200px;
+    }
+
     .container-after-login-map {
       grid-template-columns: 1fr;
       grid-template-rows: 180px auto;
@@ -224,7 +295,7 @@ a{
         font-size: 11px;        
         justify-items: center;
         overflow-y: auto;
-        height:400px;
+        height:100vh;
     }
     aside{
         grid-area: aside;
